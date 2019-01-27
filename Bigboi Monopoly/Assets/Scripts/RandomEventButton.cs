@@ -5,11 +5,18 @@ using UnityEngine.UI;
 
 public class RandomEventButton : MonoBehaviour
 {
+    AudioSource Gong;
     public string[] RandomEvents;
+    private bool RobotInCharge = false;
 
     public void TextChanger()
     {
         int index = Random.Range(0, RandomEvents.Length);
         GetComponent<Text>().text = RandomEvents[index];
+        Gong = GetComponent<>
+    }
+    public void RobotEvents()
+    {
+
     }
 }
