@@ -11,6 +11,7 @@ public class ShaderController : MonoBehaviour
     void Start()
     {
         robotModeActivated = false;
+        GetComponent<Image>().material.SetFloat("_RobotMode", 0.0f);
     }
 
     // Update is called once per frame
@@ -19,20 +20,14 @@ public class ShaderController : MonoBehaviour
 
     }
 
-    public void ToggleRobotMode()
+    public void RobotEnable()
     {
-        robotModeActivated = !robotModeActivated;
+        robotModeActivated = true;
         GetComponent<Image>().material.SetFloat("_RobotMode", robotModeActivated ? 1.0f : 0.0f);
     }
     public void RobotDisable()
     {
-        if(robotModeActivated == true)
-        {
-            ToggleRobotMode();
-        }
-        else
-        {
-            robotModeActivated = false;
-        }
+        robotModeActivated = false;
+        GetComponent<Image>().material.SetFloat("_RobotMode", robotModeActivated ? 1.0f : 0.0f);
     }
 }

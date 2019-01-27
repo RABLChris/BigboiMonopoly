@@ -14,6 +14,7 @@ public class RandomEventButton : MonoBehaviour
         int index = Random.Range(0, RandomEvents.Length);
         GetComponent<Text>().text = RandomEvents[index];
         Gong = GetComponent<AudioSource>();
+        Gong.pitch = Random.Range(0.8f, 1.2f);
         Gong.Play(0);
     }
     public void RobotEvents()

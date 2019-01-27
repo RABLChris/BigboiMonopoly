@@ -28,4 +28,11 @@ public class MrMoneybags : MonoBehaviour
         }
         GetComponent<Transform>().rotation = Quaternion.Slerp(GetComponent<Transform>().rotation, targetRotation, timeSinceRotation);
     }
+
+    public void OOH()
+    {
+        var voice = GetComponent<AudioSource>();
+        voice.pitch = Random.Range(0.8f, 1.2f);
+        voice.Play(0);
+    }
 }
