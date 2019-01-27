@@ -6,11 +6,6 @@ using UnityEngine.UI;
 public class RandomEventButton : MonoBehaviour
 {
     public string[] RandomEvents;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     public void TextChanger()
     {
