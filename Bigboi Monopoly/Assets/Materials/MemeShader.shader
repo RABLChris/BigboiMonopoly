@@ -90,15 +90,22 @@ Shader "UI/BackgroundShader"
 		fixed2 aspectRatio = fixed2(16, 9) * 3.0f;
 		float timeFactor = _Time.x;
 
+		fixed2 uv = (IN.texcoord + fixed2(timeFactor, timeFactor));
 		if (_RobotMode > 0)
 		{
 			earthboundBlue = fixed4(204.0 / 255.0, 80.0 / 255.0, 75.0 / 255.0, 1.0);
 			earthboundGreen = fixed4(200.0 / 255.0, 200.0 / 255.0, 200.0 / 255.0, 1.0);
 			timeFactor = _Time.y / 10.0f;
-		}
 
-		fixed2 uv = (IN.texcoord + fixed2(timeFactor, timeFactor));
-		uv = uv * aspectRatio; //Multiply by the aspect ratio to make our checkerboard squares square
+			float first = lerp(IN.texcoord.x, IN.texcoord.y, sin(_Time.y * 0.14159f) * 0.5f + 0.5f);
+			float second = lerp(1.0f - IN.texcoord.x, 1.0f - IN.texcoord.y, sin(_Time.y * 0.59141f) * 0.5f + 0.5f);
+			uv = ((IN.texcoord * lerp(first, second, sin(_Time.y) * 0.5 + 0.5)) + fixed2(timeFactor, timeFactor));
+			uv = uv * aspectRatio; //Multiply by the aspect ratio to make our checkerboard squares square
+		}
+		else
+		{
+			uv = uv * aspectRatio; //Multiply by the aspect ratio to make our checkerboard squares square
+		}
 
 		int xCoordinate = int(round(uv.x));
 		int yCoordinate = int(round(uv.y));
