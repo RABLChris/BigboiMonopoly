@@ -32,7 +32,7 @@ public class MrMoneybags : MonoBehaviour
     public void OOH()
     {
         var voice = GetComponent<AudioSource>();
-        voice.pitch = Random.Range(0.8f, 1.2f);
+        voice.pitch = ShaderController.robotModeActivated ? Random.Range(1.2f, 1.8f) : Random.Range(0.8f, 1.2f);
         voice.Play(0);
     }
 }
