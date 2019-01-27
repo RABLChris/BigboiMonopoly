@@ -13,11 +13,11 @@ public class FineController : MonoBehaviour
     {
         if (RobotInCharge == false)
         {
-            GetComponent<Text>().text = ("The fine rests at $" + Random.Range(0, 10000).ToString());
+            GetComponent<Text>().text = ("The fine rests at $" + Random.Range(0, 300).ToString());
         }
         else
         {
-            GetComponent<Text>().text = ("The robot decrees that the fine rests at $" + Random.Range(0, 10000).ToString());
+            GetComponent<Text>().text = ("The robot decrees that the fine rests at $" + Random.Range(100, 401).ToString());
         }
     }
     public void RobotDeactivator()
