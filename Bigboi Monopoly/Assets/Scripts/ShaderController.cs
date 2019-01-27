@@ -10,7 +10,7 @@ public class ShaderController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        robotModeActivated = false;
     }
 
     // Update is called once per frame
@@ -23,5 +23,16 @@ public class ShaderController : MonoBehaviour
     {
         robotModeActivated = !robotModeActivated;
         GetComponent<Image>().material.SetFloat("_RobotMode", robotModeActivated ? 1.0f : 0.0f);
+    }
+    public void RobotDisable()
+    {
+        if(robotModeActivated == true)
+        {
+            ToggleRobotMode();
+        }
+        else
+        {
+            robotModeActivated = false;
+        }
     }
 }
