@@ -550,7 +550,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769184020}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -744,7 +744,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 320, y: -15.5}
+  m_AnchoredPosition: {x: -297, y: -74.5}
   m_SizeDelta: {x: 160, y: 149}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &870193010
@@ -982,7 +982,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 320, y: 132}
+  m_AnchoredPosition: {x: -297, y: 93}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1140146970
@@ -1040,9 +1040,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RandomEvents:
-  - socks
-  - the fine
-  - two fine
+  - House Toss
+  - Hotel Toss
+  - For all cards drawn, draw 3 instead
+  - Before card reveal, player on left can take the card
+  - Free Parking is Paid Parking
+  - House Ruler buys a property
+  - Bank is backwards
+  - Keep the change
+  - Battle Royale mode
+  - Everyone gets $10
+  - Everyone pass a property to the right
+  - Everyone rolls, lowest wins $999
+  - Poorest player gets Boardwalk
+  - Tax Day
+  - Opposite Tax Day
+  - House Ruler Kickstarter
+  - Add an extra property to the board
+  - Everyone go back 16 spaces
+  - Everyone pick your favorite and least favorite spots and why
+  - Everyone rolls a die. whoever gets the highest number gets an extra game piece
+  - Pay the fine
+  - Receive the fine
+  - Engage Robot
+  - Stop using two dice
+  - Please use three dice
+  - Change the dice
+  - Everyone go to jail
+  - Lights off
+  - All spaces are open
+  - Everyone roll, lowest puts on a hat
+  - Add a zero to all transactions this round
+  - Remove a zero from all transactions this round
+  - Do the wave
+  - Everyone gets a contract card
+  - Shuffle property cards
 --- !u!82 &1140146973
 AudioSource:
   m_ObjectHideFlags: 0
