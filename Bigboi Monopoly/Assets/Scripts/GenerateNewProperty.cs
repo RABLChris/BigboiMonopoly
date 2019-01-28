@@ -17,7 +17,10 @@ public class GenerateNewProperty : MonoBehaviour
 
     void SetPlaceName()
     {
+        Image panelBar = transform.Find("Property Bar").GetComponent<Image>();
+        panelBar.color = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
         Text propertyText = transform.Find("Property Bar").transform.Find("Property Name").GetComponent<Text>();
+        propertyText.color = (0.213 * panelBar.color.r + 0.715 * panelBar.color.g + 0.072 * panelBar.color.b) < 0.5f ? Color.white : Color.black;
 
         string[] placeFormatsRaw = PlaceFormats.text.Split('\n');
         string placeFormat = placeFormatsRaw[Random.Range(0, placeFormatsRaw.Length)];
