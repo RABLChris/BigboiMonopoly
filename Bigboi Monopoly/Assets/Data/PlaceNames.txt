@@ -7,7 +7,7 @@ Tarp
 Idiot
 Meat Lover
 Dolphin
-Cook
+Crook
 Lasagna
 Ash Ketchum
 Doge
@@ -18,3 +18,6 @@ Hobo
 Perriwinkle
 Roy
 Transplant
+Cop
+Marth
+Bad Man
