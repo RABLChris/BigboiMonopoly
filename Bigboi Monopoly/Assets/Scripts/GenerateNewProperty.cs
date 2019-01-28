@@ -41,7 +41,7 @@ public class GenerateNewProperty : MonoBehaviour
         int hotel = (int)((float)house4 * Random.Range(1.2f, 1.3f));
         int mortgage = (int)((float)hotel * Random.Range(0.075f, 0.125f));
         int price = (int)((float)house2 * Random.Range(0.75f, 0.85f));
-        int houseCost = (int)((float)((rent / 25) * 50) * Random.Range(0.75f, 1.25f));
+        int houseCost = (int)((float)(((rent / 25) + 1) * 25) * Random.Range(0.75f, 1.25f));
         int hotelCost = houseCost;
 
         Text priceText = transform.GetChild(1).transform.Find("Price Text").GetComponent<Text>();
