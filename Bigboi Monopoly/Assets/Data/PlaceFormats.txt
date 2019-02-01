@@ -8,5 +8,21 @@ St. %'s Place
 % Rd.
 % Place
 % Station
+<<<<<<< Updated upstream
 % Towers
 Casa Del %
+=======
+The % Store
+% Line
+The Royal Court of %
+% Department
+% Ranch
+% Stadium
+% in a Cardboard Box
+The Office of %
+%'s Swamp
+% Pit
+%
+% Boulevard
+%'s House
+>>>>>>> Stashed changes
