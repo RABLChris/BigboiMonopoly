@@ -8,10 +8,8 @@ St. %'s Place
 % Rd.
 % Place
 % Station
-<<<<<<< Updated upstream
 % Towers
 Casa Del %
-=======
 The % Store
 % Line
 The Royal Court of %
@@ -25,4 +23,3 @@ The Office of %
 %
 % Boulevard
 %'s House
->>>>>>> Stashed changes
