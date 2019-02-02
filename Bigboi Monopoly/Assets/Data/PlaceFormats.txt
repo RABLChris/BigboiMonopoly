@@ -42,3 +42,9 @@ North %
 % Hotel
 % Park
 % Zone
+% 64
+(((%)))
+"%"
+% Castle
+% Town
+The % Games
