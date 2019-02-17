@@ -232,7 +232,7 @@ PrefabInstance:
     - target: {fileID: 2047863383, guid: 42376c037de3d0446ac852ec35617e5f, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 31662dd97c47f4e9ea20d5a68b141206, type: 3}
+      objectReference: {fileID: 8300000, guid: 948ea8e5c4db440579fc6ed8ad644f5f, type: 3}
     - target: {fileID: 2047863380, guid: 42376c037de3d0446ac852ec35617e5f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OOH
