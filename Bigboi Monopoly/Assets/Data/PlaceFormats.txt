@@ -48,3 +48,12 @@ North %
 % Castle
 % Town
 The % Games
+% Drop
+% Tactics
+% The Gathering
+% On Tour
+% Hospital
+The Golden %
+% Alley
+% Canyon
+The Haunted %
